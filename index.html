@@ -5,75 +5,109 @@
     <meta charset="utf-8" />
     <title>Loony's Towing</title>
     <!--Links-->
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css'>
+    <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css'>
     <!--Scripts-->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js'></script>
 </head>
-<body>
-    <header>
-        <h1 id="titleTxt">Loony's Towing</h1>
-    </header>
-    <!--Begin Home section-->
-    <section id="home">
-        <!--Add code-->
-    </section>
-    <!--Begin About section-->
-    <section id="about">
-        <article>
-            <h1>
-                About Loony's Towing
-            </h1>
-            <section id="aboutTxt">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit 
-                    esse cillum dolore eu fugiat nulla pariatur.
-                    Excepteur sint occaecat cupidatat non proident, 
-                    sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-            </section>            
-        </article>
-    </section>
-    <!--Begin Connect section-->
-    <section id="connect">
-        <article>
-            <h1>
-                Contact Me
-            </h1>
-            <!--Google map to display office location-->
-            <article id="map">
-            <!--Place google map code here-->
+<body class="body">
+    <div class="page">
+        <header>
+            <!--logo and business phone-->
+        </header>
+        <!--Begin Home section-->
+        <section id="home">
+            <h1 id="titleTxt" class="red">Loony's Towing</h1>
+            <img id="homePic" src="#" alt="Image of tow truck">
+        </section>
+        <!--Begin About section-->
+        <section id="about">
+            <article>
+                <h1 class="red">
+                    About Loony's Towing
+                </h1>
+                <section id="aboutTxt" class="silverTxt">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit 
+                        esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, 
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </section>            
             </article>
-            <!--Address and contact info-->
-            <aside>
-                <section>
-                    <!--Business address-->
-                    <p>123 main st<br />anytown, usa 12345</p>
-                    <!--Business phone number-->
-                    <p>Phone: (123)456-7890</p>
+        </section>
+        <!--Begin Services section-->
+        <section id="services">
+            <article>
+                <h1 class="red">
+                    Services
+                </h1>
+                <section class="silverTxt">
+                    <p>
+                        At Loony's Towing, we offer the following services:
+                    </p>
+                    <ul>
+                        <li>
+                            Recovery
+                        </li>
+                        <li>
+                            Repo
+                        </li>
+                        <li>
+                            Lorem
+                        </li>
+                        <li>
+                            Ipsum
+                        </li>
+                    </ul>
+                    <p>
+                        We always provide competitive prices and rapid response times by our courteous, professional drivers.
+                    </p>
                 </section>
-            </aside>
-            <div id="linkBar" class="container-fluid">
-                <div class="row">
-                    <div class="col-md">
-                        <label id="fbButtonLabel" for="fbButton">Connect on Facebook</label>
-                        <br /><button id="fbButton" class="fa fa-facebook"></button>
+            </article>
+        </section>
+        <!--Begin Connect section-->
+        <section id="connect">
+            <article>
+                <h1 class="red">
+                    Contact Us
+                </h1>
+                <!--Google map to display office location-->
+                <article id="map">
+                <!--Place google map code here-->
+                </article>
+                <!--Address and contact info-->
+                <aside>
+                    <section class="silverTxt">
+                        <!--Business address-->
+                        <p>123 main st<br />anytown, usa 12345</p>
+                        <!--Business phone number-->
+                        <p>Phone: (123)456-7890</p>
+                    </section>
+                </aside>
+                <section id="linkBar" class="container-fluid, linkBar">
+                    <div class="row">
+                        <div class="col-md">
+                            <label id="fbButtonLabel" for="fbButton">Connect on Facebook</label>
+                            <br /><button id="fbButton" class="fa fa-facebook"></button>
+                        </div>
+                        <div class="col-md">
+                            <label id="emailButtonLabel" for="emailButton">Send us an e-mail</label>
+                            <br /><button id="emailButton" class="fa fa-envelope-open"></button>
+                        </div>
+                        <div class="col-md">
+                            <label id="callButtonLabel" for="callButton">Call us</label>
+                            <br /><button id="callButton" class="fa fa-phone"></button>
+                        </div>
                     </div>
-                    <div class="col-md">
-                        <label id="emailButtonLabel" for="emailButton">Send us an e-mail</label>
-                        <br /><button id="emailButton" class="fa fa-envelope-open"></button>
-                    </div>
-                    <div class="col-md">
-                        <label id="callButtonLabel" for="callButton">Call us</label>
-                        <br /><button id="callButton" class="fa fa-phone"></button>
-                    </div>
-                </div>
-            </div>
-        </article>
-    </section>
+                </section>
+            </article>
+        </section>
+    </div>
 </body>
 </html>
