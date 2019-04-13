@@ -24,18 +24,12 @@
     font-weight: 800;
 }
 
-.center {
-    align-content: center;
-    border: 2px solid pink;
-}
-
 #homePic {
     height: 300px;
     width: 300px;
     background-color: white;
 }
 
-#locationOfShop {
-    width: 450;
-    height: 250;
+#map {
+    text-align: center;
 }
