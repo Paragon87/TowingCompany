@@ -21,6 +21,7 @@
     font-size: 4em;
     border-bottom: .1em solid;
     border-bottom-color: linear-gradient(90deg, rgba(21,21,21,1) 0%, rgba(153,0,0,1) 50%, rgba(21,21,21,1) 100%);
+    padding-top: 50px;
 }
 
 .silverTxt {
@@ -40,7 +41,7 @@
 .fa-facebook-square, .fa-envelope-open-text, .fa-phone-volume {
     border: none;
     background: none;
-    color: silver;
+    color: #990000;
 }
 
 #home {
@@ -52,6 +53,14 @@
     height: auto;
     width: 500px;
     padding-top: 50px
+}
+
+#aboutTxt, #servicesTxt, #contactAddress {
+    padding-top: 50px;
+}
+
+.col-lg {
+    padding: 20px;
 }
 
 #map {
