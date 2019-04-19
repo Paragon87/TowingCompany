@@ -10,21 +10,21 @@ $(document).ready(function() {
         $(this).css("color", "grey");
     },
     function() {
-        $(this).css("color", "#990000");
+        $(this).css("color", "white");
     });
 
     $("#emailButton").hover(function() {
         $(this).css("color", "grey");
     },
     function() {
-        $(this).css("color", "#990000");
+        $(this).css("color", "white");
     });
 
     $("#callButton").hover(function() {
         $(this).css("color", "grey");
     },
     function() {
-        $(this).css("color", "#990000");
+        $(this).css("color", "white");
     });
 
 });
