@@ -80,7 +80,9 @@
 
 #serviceList {
     list-style-position: inside;
-    list-style-type: circle;
+    list-style-type: square;
+    display: inline-block;
+    text-align: left;
 }
 
 #busLocation {
@@ -91,4 +93,8 @@
 #locationOfShop {
     height: 250px;
     width: 400px;
+}
+
+#busAddress {
+    padding: 40px;
 }
