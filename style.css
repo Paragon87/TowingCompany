@@ -87,3 +87,8 @@
     max-width: 750px;
     margin: auto;  
 }
+
+#locationOfShop {
+    height: 250px;
+    width: 400px;
+}
