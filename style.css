@@ -106,7 +106,7 @@
     left: 0;
     display: none;
     position: fixed;
-    background-color: #151515;
+    background: none;
     overflow: auto;
 }
 
