@@ -111,9 +111,12 @@
 }
 
 #close {
+    background: none;
+    border: none;
+    color: red;
     position: absolute;
-    right: -14px;
-    top: -14px;
+    right: 0px;
+    top: 5px;
     cursor: pointer;
 }
 
@@ -182,9 +185,9 @@
     width: 100%;
     text-align: center;
     display: block;
-    background-color: #FFBC00;
+    background-color: black;
     color: #fff;
-    border: 1px solid #FFCB00;
+    border: 1px solid black;
     padding: 10px 0;
     font-size: 20px;
     cursor: pointer;
