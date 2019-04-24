@@ -31,18 +31,20 @@ $(document).ready(function() {
     var sender = "?sender=" + document.getElementById("name").value;
     var senderEmail = "senderEmail=" + document.getElementById("email").value;
     var message = "body=" + document.getElementById("msg").value;
+    var subject = "Website Lead";
     var recipient="goff3110";
     var at = String.fromCharCode(64);
     var dotcom="gmail.com";
     var mail="mailto:";
 
+    alert("Test");
+    
     // Validating Empty Field
     function check_empty() {
         if (document.getElementById('name').value == "" || document.getElementById('email').value == "" || document.getElementById('msg').value == "") {
             alert("Fill All Fields !");
         } else {
-            document.getElementById("emailForm").submit();
-            //window.open(mail+recipient+at+dotcom+sender+senderEmail+message, "_blank");
+            window.open(mail+recipient+at+dotcom+sender+senderEmail+subject+message, "_blank");
             alert("Form Submitted Successfully...");
         };
     };
