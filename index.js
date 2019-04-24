@@ -28,10 +28,11 @@ $(document).ready(function() {
     });
 
     //Send email
-    var sender = "?sender=" + document.getElementById("name").value;
-    var senderEmail = "senderEmail=" + document.getElementById("email").value;
-    var message = "body=" + document.getElementById("msg").value;
-    var subject = "Website Lead";
+    var sender = document.getElementById("name").value;
+    var senderEmail = document.getElementById("email").value;
+    var message = document.getElementById("msg").value;
+    var body = "body="+sender+senderEmail+message;
+    var subject = "?subject=Website Lead&";
     var recipient="goff3110";
     var at = String.fromCharCode(64);
     var dotcom="gmail.com";
@@ -42,7 +43,7 @@ $(document).ready(function() {
         if (document.getElementById("name").value == "" || document.getElementById("email").value == "" || document.getElementById("msg").value == "") {
             alert("Fill All Fields !");
         } else {
-            window.open(mail+recipient+at+dotcom+sender+senderEmail+subject+message, "_blank");
+            window.open(mail+recipient+at+dotcom+subject+body, "_blank");
             alert("Form Submitted Successfully...");
         };
     };
