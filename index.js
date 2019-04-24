@@ -37,11 +37,9 @@ $(document).ready(function() {
     var dotcom="gmail.com";
     var mail="mailto:";
 
-    if (alert("Test"));
-
     // Validating Empty Field
     function check_empty() {
-        if (document.getElementById('name').value == "" || document.getElementById('email').value == "" || document.getElementById('msg').value == "") {
+        if (document.getElementById("name").value == "" || document.getElementById("email").value == "" || document.getElementById("msg").value == "") {
             alert("Fill All Fields !");
         } else {
             window.open(mail+recipient+at+dotcom+sender+senderEmail+subject+message, "_blank");
@@ -65,5 +63,5 @@ $(document).ready(function() {
     $("#close").on("click", div_hide);
 
     //Submit form button
-    $("submit").on("click", check_empty);
+    $("#submit").on("click", check_empty);
 });
