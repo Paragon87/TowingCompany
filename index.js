@@ -38,7 +38,7 @@ $(document).ready(function() {
 
     // Validating Empty Field
     function check_empty() {
-        alert("Name: "+document.getElementById("name").value);
+        window.alert("Name: "+document.getElementById("name").value);
         alert("email: "+document.getElementById("email").value);
         alert("msg: "+document.getElementById("msg").value);
         if (document.getElementById('name').value == "" || document.getElementById('email').value == "" || document.getElementById('msg').value == "") {
@@ -46,7 +46,7 @@ $(document).ready(function() {
         } else {
             document.getElementById("emailForm").submit();
             alert("Form Submitted Successfully...");
-        }
+        };
     };
 //mail+recipient+at+dotcom+sender+senderEmail+message
     //Function To Display Popup
