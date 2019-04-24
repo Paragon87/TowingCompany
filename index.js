@@ -41,7 +41,7 @@ $(document).ready(function() {
         if (document.getElementById('name').value == "" || document.getElementById('email').value == "" || document.getElementById('msg').value == "") {
             alert("Fill All Fields !");
         } else {
-            window.open("mailto: goff3110@gmail.com");
+            document.getElementById("emailForm").submit();
             alert("Form Submitted Successfully...");
         }
     };
@@ -63,5 +63,5 @@ $(document).ready(function() {
     $("#close").on("click", div_hide);
 
     //Submit form button
-    //$("submit").on("click", check_empty);
+    $("submit").on("click", check_empty);
 });
