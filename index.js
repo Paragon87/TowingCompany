@@ -38,6 +38,9 @@ $(document).ready(function() {
 
     // Validating Empty Field
     function check_empty() {
+        alert("Name: "+document.getElementById("name").value);
+        alert("email: "+document.getElementById("email").value);
+        alert("msg: "+document.getElementById("msg").value);
         if (document.getElementById('name').value == "" || document.getElementById('email').value == "" || document.getElementById('msg').value == "") {
             alert("Fill All Fields !");
         } else {
