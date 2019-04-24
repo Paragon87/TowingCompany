@@ -41,12 +41,11 @@ $(document).ready(function() {
         if (document.getElementById('name').value == "" || document.getElementById('email').value == "" || document.getElementById('msg').value == "") {
             alert("Fill All Fields !");
         } else {
-            //document.getElementById("emailForm").submit();
-            window.open(mail+recipient+at+dotcom+sender+senderEmail+message, "_blank");
+            document.getElementById("emailForm").submit();
+            //window.open(mail+recipient+at+dotcom+sender+senderEmail+message, "_blank");
             alert("Form Submitted Successfully...");
         };
     };
-//mail+recipient+at+dotcom+sender+senderEmail+message
     //Function To Display Popup
     function div_show() {
     document.getElementById('emailPopup').style.display = "block";
