@@ -37,8 +37,8 @@ $(document).ready(function() {
     var dotcom="gmail.com";
     var mail="mailto:";
 
-    alert("Test");
-    
+    if (alert("Test"));
+
     // Validating Empty Field
     function check_empty() {
         if (document.getElementById('name').value == "" || document.getElementById('email').value == "" || document.getElementById('msg').value == "") {
