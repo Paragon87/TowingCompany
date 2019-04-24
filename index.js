@@ -42,6 +42,7 @@ $(document).ready(function() {
             alert("Fill All Fields !");
         } else {
             window.open("mailto: goff3110@gmail.com");
+            alert("Form Submitted Successfully...");
         }
     };
 //mail+recipient+at+dotcom+sender+senderEmail+message
@@ -62,5 +63,5 @@ $(document).ready(function() {
     $("#close").on("click", div_hide);
 
     //Submit form button
-    $("submit").on("click", check_empty);
+    //$("submit").on("click", check_empty);
 });
