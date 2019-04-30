@@ -40,7 +40,7 @@ $(document).ready(function() {
             alert(sender);
             var senderEmail = document.getElementById("email").value;
             alert(senderEmail);
-            var message = document.getElementById("msg").value + "%0D%0AFrom: " + sender.value + "%0D%0AReturn Email: " + senderEmail.value;
+            var message = document.getElementById("msg").value + "%0D%0AFrom: " + sender + "%0D%0AReturn Email: " + senderEmail;
             alert(message);
             var body = "body="+message.value;
             var subject = "?subject=Website Lead&";
