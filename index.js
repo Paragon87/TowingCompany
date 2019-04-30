@@ -27,25 +27,28 @@ $(document).ready(function() {
         $(this).css("color", "white");
     });
 
-    //Send email
-    var sender = document.getElementById("name").value;
-    alert(sender);
-    var senderEmail = document.getElementById("email").value;
-    alert(senderEmail);
-    var message = document.getElementById("msg").value + "%0D%0AFrom: " + sender.value + "%0D%0AReturn Email: " + senderEmail.value;
-    alert(message);
-    var body = "body="+message.value;
-    var subject = "?subject=Website Lead&";
-    var recipient="goff3110";
-    var at = String.fromCharCode(64);
-    var dotcom="gmail.com";
-    var mail="mailto:";
+    
 
     // Validating Empty Field
     function check_empty() {
         if (document.getElementById("name").value == "" || document.getElementById("email").value == "" || document.getElementById("msg").value == "") {
             alert("Fill All Fields !");
         } else {
+
+            //Send email
+            var sender = document.getElementById("name").value;
+            alert(sender);
+            var senderEmail = document.getElementById("email").value;
+            alert(senderEmail);
+            var message = document.getElementById("msg").value + "%0D%0AFrom: " + sender.value + "%0D%0AReturn Email: " + senderEmail.value;
+            alert(message);
+            var body = "body="+message.value;
+            var subject = "?subject=Website Lead&";
+            var recipient="goff3110";
+            var at = String.fromCharCode(64);
+            var dotcom="gmail.com";
+            var mail="mailto:";
+
             window.open(mail+recipient+at+dotcom+subject+body, "_blank");
             alert("Form Submitted Successfully...");
         };
