@@ -31,7 +31,7 @@ $(document).ready(function() {
     var sender = document.getElementById("name").value;
     var senderEmail = document.getElementById("email").value;
     var message = document.getElementById("msg").value;
-    var body = "body="+sender+senderEmail+message;
+    var body = "body="+document.getElementById("msg").value;
     var subject = "?subject=Website Lead&";
     var recipient="goff3110";
     var at = String.fromCharCode(64);
