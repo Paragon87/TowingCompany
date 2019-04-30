@@ -1,7 +1,17 @@
 $(document).ready(function() {
     
+    //Service list
+    $("#li1").hover(function() {
+        $("liDiv1").display("inline-block");
+        $(this).css("color", "grey");
+    },
+    function() {
+        $("liDiv1").display("none");
+        $(this).css("color", "white");
+    });
+
     //Open business Facebook page function
-    $("#fbButton").on("click", function () {
+    $("#fbButton").on("click", function() {
         window.open("https://www.facebook.com/Mercado-and-Sons-Towing-673109756480032", "_blank");
     });
 
@@ -27,8 +37,6 @@ $(document).ready(function() {
         $(this).css("color", "white");
     });
 
-    
-
     // Validating Empty Field
     function check_empty() {
         if (document.getElementById("name").value == "" || document.getElementById("email").value == "" || document.getElementById("msg").value == "") {
@@ -37,22 +45,20 @@ $(document).ready(function() {
 
             //Send email
             var sender = document.getElementById("name").value;
-            alert(sender);
             var senderEmail = document.getElementById("email").value;
-            alert(senderEmail);
-            var message = document.getElementById("msg").value + "%0D%0AFrom: " + sender + "%0D%0AReturn Email: " + senderEmail;
-            alert(message);
-            var body = "body="+message;
+            var message = document.getElementById("msg").value + "%0D%0AFrom: " + sender + "%0D%0AReturn Email: " + senderEmail + "%0D%0A";
+            var body = "body=" + message;
             var subject = "?subject=Website Lead&";
-            var recipient="goff3110";
+            var recipient="mercadotowing6";
             var at = String.fromCharCode(64);
-            var dotcom="gmail.com";
+            var dotcom="yahoo.com";
             var mail="mailto:";
 
-            window.open(mail+recipient+at+dotcom+subject+body, "_blank");
+            window.location.href = mail + recipient + at + dotcom + subject + body;
             alert("Form Submitted Successfully...");
         };
     };
+
     //Function To Display Popup
     function div_show() {
     document.getElementById('emailPopup').style.display = "block";
