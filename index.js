@@ -42,7 +42,7 @@ $(document).ready(function() {
             alert(senderEmail);
             var message = document.getElementById("msg").value + "%0D%0AFrom: " + sender + "%0D%0AReturn Email: " + senderEmail;
             alert(message);
-            var body = "body="+message.value;
+            var body = "body="+message;
             var subject = "?subject=Website Lead&";
             var recipient="goff3110";
             var at = String.fromCharCode(64);
