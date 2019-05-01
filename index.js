@@ -2,12 +2,31 @@ $(document).ready(function() {
     
     //Service list
     $("#li1").hover(function() {
-        $("liDiv1").display("inline-block");
-        $(this).css("color", "grey");
+        document.getElementById("liDiv1").style.display = "block";
     },
     function() {
-        $("liDiv1").display("none");
-        $(this).css("color", "white");
+        document.getElementById("liDiv1").style.display = "none";
+    });
+
+    $("#li2").hover(function() {
+        document.getElementById("liDiv2").style.display = "block";
+    },
+    function() {
+        document.getElementById("liDiv2").style.display = "none";
+    });
+
+    $("#li3").hover(function() {
+        document.getElementById("liDiv3").style.display = "block";
+    },
+    function() {
+        document.getElementById("liDiv3").style.display = "none";
+    });
+
+    $("#li4").hover(function() {
+        document.getElementById("liDiv4").style.display = "block";
+    },
+    function() {
+        document.getElementById("liDiv4").style.display = "none";
     });
 
     //Open business Facebook page function
