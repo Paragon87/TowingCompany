@@ -43,16 +43,18 @@
 }
 
 /*media query to open price divs*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .serviceList {
         text-align: center;
         display: block;
-    };
-};
+    }
+}
 
-.serviceList {
-    text-align: center;
-    display: none;
+@media only screen and (min-width: 768px) {
+    .serviceList {
+        text-align: right;
+        display: none;
+    }
 }
 
 .linkBar {
