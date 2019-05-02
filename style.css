@@ -52,7 +52,7 @@
 
 @media only screen and (min-width: 768px) {
     .serviceList {
-        text-align: right;
+        text-align: center;
         display: none;
     }
 }
