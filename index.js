@@ -73,7 +73,8 @@ $(document).ready(function() {
             var dotcom="yahoo.com";
             var mail="mailto:";
 
-            window.location.href = mail + recipient + at + dotcom + subject + body;
+            //location.href
+            window.open = mail + recipient + at + dotcom + subject + body;
             alert("Form Submitted Successfully...");
         };
     };
@@ -96,4 +97,9 @@ $(document).ready(function() {
 
     //Submit form button
     $("#submit").on("click", check_empty);
+
+    //Function to dial business phone
+    $("#callButton").on("click", function() {
+        window.location.href = "tel:8478007859";
+    });
 });
