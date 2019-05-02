@@ -1,3 +1,19 @@
+/*media queries to open/close price divs*/
+
+@media only screen and (max-width: 768px) {
+    .serviceList {
+        text-align: center;
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .serviceList {
+        text-align: center;
+        display: none;
+    }
+}
+
 /*Class Styles*/
 
 .body {
@@ -40,21 +56,6 @@
     font-family: 'Underdog', cursive;
     font-size: 1.5em;
     text-align: center;
-}
-
-/*media query to open price divs*/
-@media only screen and (max-width: 768px) {
-    .serviceList {
-        text-align: center;
-        display: block;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .serviceList {
-        text-align: center;
-        display: none;
-    }
 }
 
 .linkBar {
