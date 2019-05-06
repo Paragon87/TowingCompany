@@ -56,7 +56,7 @@ $(document).ready(function() {
         $(this).css("color", "white");
     });
 
-    // Validating Empty Field
+    // Validating Empty Field And Sending Email
     function check_empty() {
         if (document.getElementById("name").value == "" || document.getElementById("email").value == "" || document.getElementById("msg").value == "") {
             alert("Fill All Fields !");
@@ -73,8 +73,8 @@ $(document).ready(function() {
             var dotcom="gmail.com";//yahoo.com
             var mail="mailto:";
 
-            //open
-            window.location.href = mail + recipient + at + dotcom + subject + body;
+            //location.href
+            window.open(mail + recipient + at + dotcom + subject + body);
             alert("Form Submitted Successfully...");
         };
     };
