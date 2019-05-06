@@ -76,6 +76,7 @@ $(document).ready(function() {
             //location.href
             window.open(mail + recipient + at + dotcom + subject + body);
             alert("Form Submitted Successfully...");
+            div_hide();
         };
     };
 
