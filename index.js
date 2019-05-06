@@ -68,13 +68,13 @@ $(document).ready(function() {
             var message = document.getElementById("msg").value + "%0D%0AFrom: " + sender + "%0D%0AReturn Email: " + senderEmail + "%0D%0A";
             var body = "body=" + message;
             var subject = "?subject=Website Lead&";
-            var recipient="mercadotowing6";
+            var recipient="goff3110";//mercadotowing6
             var at = String.fromCharCode(64);
-            var dotcom="yahoo.com";
+            var dotcom="gmail.com";//yahoo.com
             var mail="mailto:";
 
-            //location.href
-            window.open = mail + recipient + at + dotcom + subject + body;
+            //open
+            window.location.href = mail + recipient + at + dotcom + subject + body;
             alert("Form Submitted Successfully...");
         };
     };
