@@ -64,7 +64,7 @@ $(document).ready(function() {
             //Send email
             var sender = document.getElementById("name").value;
             var senderEmail = document.getElementById("email").value;
-            var message = document.getElementById("msg").value + "%0D%0AFrom: " + sender + "%0D%0AReturn Email: " + senderEmail + "%0D%0A";
+            var message = document.getElementById("msg").value + "%0D%0A%0D%0AFrom: " + sender + "%0D%0A%0D%0AReturn Email: " + senderEmail + "%0D%0A";
             var body = "body=" + message;
             var subject = "?subject=Website Lead&";
             var recipient="goff3110";//mercadotowing6
