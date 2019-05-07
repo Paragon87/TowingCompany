@@ -61,7 +61,6 @@ $(document).ready(function() {
         if (document.getElementById("name").value == "" || document.getElementById("email").value == "" || document.getElementById("msg").value == "") {
             alert("Fill All Fields !");
         } else {
-
             //Send email
             var sender = document.getElementById("name").value;
             var senderEmail = document.getElementById("email").value;
@@ -73,8 +72,8 @@ $(document).ready(function() {
             var dotcom="gmail.com";//yahoo.com
             var mail="mailto:";
 
-            //location.href
-            window.open(mail + recipient + at + dotcom + subject + body);
+            var mailWindow = window.open(mail + recipient + at + dotcom + subject + body);
+            setTimeout(function(){mailWindow.close()}, 2000);
             alert("Form Submitted Successfully...");
             div_hide();
         };
