@@ -67,9 +67,9 @@ $(document).ready(function() {
             var message = document.getElementById("msg").value + "%0D%0A%0D%0AFrom: " + sender + "%0D%0AReturn Email: " + senderEmail + "%0D%0A%0D%0A";
             var body = "body=" + message;
             var subject = "?subject=Website Lead&";
-            var recipient="goff3110";//mercadotowing6
+            var recipient="mercadotowing6";
             var at = String.fromCharCode(64);
-            var dotcom="gmail.com";//yahoo.com
+            var dotcom="yahoo.com";
             var mail="mailto:";
 
             var mailWindow = window.open(mail + recipient + at + dotcom + subject + body);
