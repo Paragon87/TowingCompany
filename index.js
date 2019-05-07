@@ -73,7 +73,7 @@ $(document).ready(function() {
             var mail="mailto:";
 
             var mailWindow = window.open(mail + recipient + at + dotcom + subject + body);
-            setTimeout(function(){mailWindow.close()}, 500);
+            setTimeout(function(){mailWindow.close()}, 200);
             alert("Form Submitted Successfully...");
             div_hide();
         };
