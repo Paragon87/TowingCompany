@@ -31,6 +31,7 @@
     min-width: 350px;
     margin: auto;
     padding: 40px;
+    padding-bottom: 1px;
 }
 
 .pageTitle {
@@ -78,6 +79,16 @@
 }
 
 /*ID Styles*/
+
+header {
+    height: 50px;
+}
+#phoneLink {
+    float: right;
+    color: white;
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 25px
+}
 
 #home {
     text-align: center;
@@ -208,4 +219,15 @@
     font-size: 20px;
     cursor: pointer;
     border-radius: 5px
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+
+#authorLink img {
+    height: 50px;
+    width: 50px;
 }
