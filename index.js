@@ -29,6 +29,11 @@ $(document).ready(function() {
         document.getElementById("liDiv4").style.display = "none";
     });
 
+    //Scroller button
+    document.getElementsByClassName("page").onscroll = function() {
+        document.getElementById("scroller").style.display = "block";
+    };
+
     //Open business Facebook page function
     $("#fbButton").on("click", function() {
         window.open("https://www.facebook.com/Mercado-and-Sons-Towing-673109756480032", "_blank");
