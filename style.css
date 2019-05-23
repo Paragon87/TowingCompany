@@ -83,6 +83,11 @@
 header {
     max-height: 50px;
 }
+
+#companyLogo {
+    height: 50px;
+}
+
 #phoneLink {
     float: right;
     color: white;
